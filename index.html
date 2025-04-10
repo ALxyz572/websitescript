@@ -1,160 +1,154 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id"> 
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Toko Developer</title>
+  <title>Alpin Developer | Crasher & Destructive</title>
   <link rel="icon" href="https://files.catbox.moe/752q4k.jpg" type="image/png">
   <style>
-    :root {
-      --primary-color: #007BFF;
-      --background-color: #ffffff;
-      --text-color: #333333;
-    }
-
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: var(--background-color);
-      color: var(--text-color);
-      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffffff, #d0e7ff);
+      color: #333;
     }
-
     header {
-      background: var(--primary-color);
-      color: white;
+      background: #0d6efd;
       padding: 20px;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header button {
-      background: white;
-      color: var(--primary-color);
-      border: none;
-      padding: 10px 20px;
-      margin-top: 10px;
-      cursor: pointer;
-      border-radius: 20px;
+      color: white;
+      font-size: 2rem;
       font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-
-    header button:hover {
-      background: #e0e0e0;
-    }
-
-    main {
-      padding: 20px;
+    .container {
+      padding: 30px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      max-width: 1200px;
+      margin: auto;
     }
-
-    .product {
+    .card {
       background: white;
-      border: 2px solid #007BFF;
-      border-radius: 10px;
-      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 20px;
       text-align: center;
-      transform: translateY(50px);
-      opacity: 0;
-      transition: all 0.6s ease;
+      transition: 0.3s;
     }
-
-    .product.show {
-      transform: translateY(0);
-      opacity: 1;
+    .card:hover {
+      transform: translateY(-10px);
     }
-
-    .buy-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: var(--primary-color);
+    .card h2 {
+      color: #0d6efd;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #333;
+      margin: 10px 0;
+    }
+    .buy-btn {
+      background: #0d6efd;
       color: white;
       border: none;
-      border-radius: 20px;
+      padding: 10px 20px;
+      margin-top: 10px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
       text-decoration: none;
-      font-weight: bold;
+      display: inline-block;
     }
-
-    .buy-button:hover {
-      background: #0056b3;
+    .buy-btn:hover {
+      background: #084298;
     }
-
     footer {
-      background: #f0f0f0;
-      padding: 10px;
       text-align: center;
-      font-size: 14px;
-      margin-top: 40px;
+      padding: 20px;
+      background: #f1f1f1;
+      font-size: 0.9rem;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Toko Alpin Developer</h1>
-  <button onclick="changeBackground()">Ganti Background</button>
+  Alpin Crasher & Destructive
 </header>
 
-<main id="product-list">
-  <!-- Produk akan ditampilkan di sini -->
-</main>
+<div class="container">
+  <!-- Alpin Crasher V1-V8 -->
+  <div class="card">
+    <h2>Alpin Crasher V1</h2>
+    <p class="price">Rp10.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Alpin%20Crasher%20V1">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Alpin Crasher V2</h2>
+    <p class="price">Rp15.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Alpin%20Crasher%20V2">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Alpin Crasher V3</h2>
+    <p class="price">Rp20.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Alpin%20Crasher%20V3">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Alpin Crasher V4</h2>
+    <p class="price">Rp25.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Alpin%20Crasher%20V4">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Alpin Crasher V5</h2>
+    <p class="price">Rp30.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Alpin%20Crasher%20V5">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Alpin Crasher V6</h2>
+    <p class="price">Rp35.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Alpin%20Crasher%20V6">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Alpin Crasher V7</h2>
+    <p class="price">Rp40.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Alpin%20Crasher%20V7">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Alpin Crasher V8</h2>
+    <p class="price">Rp45.000</p>
+    <a class="buy-btn" href="http://lynk.id/alpincrasherdev/vwn54zjwmorm/checkout">Beli Sekarang</a>
+  </div>
+
+  <!-- Destructive V1-V4 -->
+  <div class="card">
+    <h2>Destructive V1</h2>
+    <p class="price">Rp10.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Destructive%20V1">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Destructive V2</h2>
+    <p class="price">Rp15.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Destructive%20V2">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Destructive V3</h2>
+    <p class="price">Rp20.000</p>
+    <a class="buy-btn" href="http://lynk.id/alpincrasherdev/v48v5p8y0gd9/checkout">Beli Sekarang</a>
+  </div>
+  <div class="card">
+    <h2>Destructive V4</h2>
+    <p class="price">Rp25.000</p>
+    <a class="buy-btn" href="https://wa.me/6287762544501?text=Halo%20saya%20mau%20beli%20Destructive%20V4">Beli Sekarang</a>
+  </div>
+</div>
 
 <footer>
-  &copy; 2025 Toko Developer. Semua Hak Dilindungi.
+  © 2025 Alpin Developer. All rights reserved.
 </footer>
-
-<script>
-  const products = [
-    { name: "Alpin Crasher V1", price: 10000, desc: "Versi awal, cocok untuk pemula." },
-    { name: "Alpin Crasher V2", price: 15000, desc: "Penambahan kecepatan pemrosesan." },
-    { name: "Alpin Crasher V3", price: 20000, desc: "Stabilitas lebih baik dan fitur tambahan." },
-    { name: "Alpin Crasher V4", price: 25000, desc: "Dukungan format baru dan UI diperbarui." },
-    { name: "Alpin Crasher V5", price: 30000, desc: "Peningkatan performa 2x lipat." },
-    { name: "Alpin Crasher V6", price: 35000, desc: "Penambahan sistem otomatisasi." },
-    { name: "Alpin Crasher V7", price: 40000, desc: "Fitur premium unlocked." },
-    { name: "Alpin Crasher V8", price: 45000, desc: "Ultimate version dengan semua fitur lengkap." },
-    { name: "Destructive V1", price: 12000, desc: "Versi awal destructive, efektif dan ringan." },
-    { name: "Destructive V2", price: 17000, desc: "Efektivitas meningkat 20%." },
-    { name: "Destructive V3", price: 22000, desc: "Support mode crasher" },
-    { name: "Destructive V4", price: 27000, desc: "Versi stabil dan cepat, recommended." }
-  ];
-
-  const productList = document.getElementById('product-list');
-
-  products.forEach(product => {
-    const productEl = document.createElement('div');
-    productEl.className = 'product';
-    productEl.innerHTML = `
-      <h2>${product.name}</h2>
-      <p>Rp${product.price.toLocaleString('id-ID')}</p>
-      <p>${product.desc}</p>
-      <a href="https://wa.me/6287762544501?text=Halo%20saya%20ingin%20beli%20${encodeURIComponent(product.name)}" target="_blank" class="buy-button">Beli</a>
-    `;
-    productList.appendChild(productEl);
-  });
-
-  function changeBackground() {
-    const colors = ['#ffffff', '#e3f2fd', '#fce4ec', '#e8f5e9', '#fff3e0'];
-    document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
-  }
-
-  // Animasi scroll
-  window.addEventListener('scroll', () => {
-    document.querySelectorAll('.product').forEach(el => {
-      if (el.getBoundingClientRect().top < window.innerHeight - 50) {
-        el.classList.add('show');
-      }
-    });
-  });
-
-  // Langsung muncul efek di awal
-  window.dispatchEvent(new Event('scroll'));
-</script>
 
 </body>
 </html>
